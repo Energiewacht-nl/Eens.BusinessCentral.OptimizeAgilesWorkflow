@@ -1,0 +1,31 @@
+{
+  "id": "1c866e3d-3ed3-45b8-ab8c-1dbd0d095029",
+  "name": "Optimize Agiles Workflow",
+  "publisher": "Essent",
+  "version": "24.4.20250902.0",
+  "logo": "",
+  "platform": "1.0.0.0",
+  "application": "24.0.0.0",
+  "dependencies": [
+    {
+      "id": "1cfb3eb7-f5f1-4738-949e-c2931c31ccc8",
+      "publisher": "Aptean",
+      "name": "Aptean Advanced Workflow Base Application",
+      "version": "1.0.0.0"}
+  ],
+  "idRanges": [
+    {
+      "from": 92625,
+      "to": 92630
+    }
+  ],
+  "features": [
+    "NoImplicitWith"
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "13.0"
+}
