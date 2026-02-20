@@ -1,4 +1,4 @@
-report 92625 "PTE Cleanup Images (Agiles)"
+report 92627 "PTE Cleanup Images (Agiles)"
 {
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
@@ -10,19 +10,19 @@ report 92625 "PTE Cleanup Images (Agiles)"
         {
             trigger OnPreDataItem()
             begin
-                Dlg.Open('Processing To-dos... #1############');
+                Dlg.Open('Processing To-dos... #1############ of ' + Format(ToDo.Count));
                 ClearImages.ClearSetup();
             end;
 
             trigger OnAfterGetRecord()
             begin
-                ClearImages.AddToBufferIfImageExists(ToDo);
+                i += ClearImages.AddToBufferIfImageExists(ToDo);
                 Dlg.Update(1, i);
             end;
 
             trigger OnPostDataItem()
             begin
-                ClearImages.ProcessBuffer();
+                ClearImages.ProcessBuffer(false);
                 Dlg.Close();
             end;
         }
