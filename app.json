@@ -1,17 +1,18 @@
 {
   "id": "1c866e3d-3ed3-45b8-ab8c-1dbd0d095029",
   "name": "Optimize Agiles Workflow",
-  "publisher": "Essent",
-  "version": "1.0.20260220.0",
+  "publisher": "Essent [27.1]",
+  "version": "27.1.260513.0",
   "logo": "",
-  "platform": "1.0.0.0",
-  "application": "24.0.0.0",
+  "platform": "27.0.0.0",
+  "application": "27.0.0.0",
   "dependencies": [
     {
       "id": "1cfb3eb7-f5f1-4738-949e-c2931c31ccc8",
       "publisher": "Aptean",
       "name": "Aptean Advanced Workflow Base Application",
-      "version": "1.0.0.0"}
+      "version": "1.0.0.0"
+    }
   ],
   "idRanges": [
     {
@@ -24,8 +25,10 @@
   ],
   "resourceExposurePolicy": {
     "allowDebugging": true,
-    "allowDownloadingSource": false,
-    "includeSourceInSymbolFile": false
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true,
+    "applyToDevExtension": false
   },
-  "runtime": "13.0"
+  "runtime": "16.0",
+  "applicationInsightsConnectionString": "InstrumentationKey=13c802aa-ea4b-4e81-8ed2-3f998f58ed80;IngestionEndpoint=https://northeurope-2.in.applicationinsights.azure.com/;LiveEndpoint=https://northeurope.livediagnostics.monitor.azure.com/"
 }
