@@ -1,4 +1,4 @@
-codeunit 92627 "PTE Clear Images (Agiles)"
+codeunit 92626 "PTE Clear Images (Agiles)"
 {
     procedure ProcessBuffer(HideDialog: Boolean)
     var
