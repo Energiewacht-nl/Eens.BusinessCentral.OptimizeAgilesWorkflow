@@ -21,14 +21,14 @@ pageextension 92627 "PTE To-Do List" extends "aWF - To-do List"
     trigger OnOpenPage()
     var
         StatusLevel: Record "aWF - Status Level";
-        aWFTextTranslationMgt: Codeunit "aWF - Text Translation Mgt.";
+        AWFTextTranslationMgt: Codeunit "aWF - Text Translation Mgt.";
     begin
         StatusLevelBuffer.DeleteAll();
         StatusLevel.FindSet();
         repeat
             StatusLevelBuffer := StatusLevel;
             StatusLevelBuffer.Name :=
-                    aWFTextTranslationMgt.GetTextFieldTranslationDescription(Database::"aWF - Status Level", StatusLevelBuffer.FieldNo(Name), 0, '', StatusLevelBuffer.Level, false, true);
+                    AWFTextTranslationMgt.GetTextFieldTranslationDescription(Database::"aWF - Status Level", StatusLevelBuffer.FieldNo(Name), 0, '', StatusLevelBuffer.Level, false, true);
             StatusLevelBuffer.Insert();
         until StatusLevel.Next() = 0;
     end;
@@ -38,32 +38,26 @@ pageextension 92627 "PTE To-Do List" extends "aWF - To-do List"
         StatusLevelBuffer.Get(Rec."Status Level");
         case StatusLevelBuffer.Style of
             StatusLevelBuffer.Style::Standard:
-                StatusStyle := 'Standard';
+                StatusStyle := Format(PageStyle::Standard);
             StatusLevelBuffer.Style::StandardAccent:
-                StatusStyle := 'StandardAccent';
+                StatusStyle := Format(PageStyle::StandardAccent);
             StatusLevelBuffer.Style::Strong:
-                StatusStyle := 'Strong';
+                StatusStyle := Format(PageStyle::Strong);
             StatusLevelBuffer.Style::StrongAccent:
-                StatusStyle := 'StrongAccent';
+                StatusStyle := Format(PageStyle::StrongAccent);
             StatusLevelBuffer.Style::Attention:
-                StatusStyle := 'Attention';
+                StatusStyle := Format(PageStyle::Attention);
             StatusLevelBuffer.Style::AttentionAccent:
-                StatusStyle := 'AttentionAccent';
+                StatusStyle := Format(PageStyle::AttentionAccent);
             StatusLevelBuffer.Style::Favorable:
-                StatusStyle := 'Favorable';
+                StatusStyle := Format(PageStyle::Favorable);
             StatusLevelBuffer.Style::Unfavorable:
-                StatusStyle := 'Unfavorable';
+                StatusStyle := Format(PageStyle::Unfavorable);
             StatusLevelBuffer.Style::Ambiguous:
-                StatusStyle := 'Ambiguous';
+                StatusStyle := Format(PageStyle::Ambiguous);
             StatusLevelBuffer.Style::Subordinate:
-                StatusStyle := 'Subordinate';
+                StatusStyle := Format(PageStyle::Subordinate);
         end;
-    end;
-
-    trigger OnAfterGetCurrRecord()
-    begin
-        //StatusLevelBuffer.Get(Rec."Status Level");
-        //StatusStyle := Format(StatusLevelBuffer.Style);
     end;
 
     var

@@ -2,6 +2,11 @@
 
 codeunit 92626 "PTE Clear Images (Agiles)"
 {
+    /// <summary>
+    /// Process Clearing Images from buffer. If HideDialog is true, no dialog will be shown.
+    /// If HideDialog is false, a dialog will be shown with the progress of clearing images
+    /// </summary>
+    /// <param name="HideDialog"></param>
     procedure ProcessBuffer(HideDialog: Boolean)
     var
         ToDo: Record "aWF - To-do";
@@ -23,6 +28,11 @@ codeunit 92626 "PTE Clear Images (Agiles)"
             Dlg.Close();
     end;
 
+    /// <summary>
+    /// Add aWF To-Do to buffer if a status picture is present
+    /// </summary>
+    /// <param name="ToDo"></param>
+    /// <returns></returns>
     procedure AddToBufferIfImageExists(var ToDo: Record "aWF - To-do"): Integer
     begin
         ToDo.CalcFields("Status Picture");
@@ -33,7 +43,10 @@ codeunit 92626 "PTE Clear Images (Agiles)"
         exit(1);
     end;
 
-    procedure ClearSetup();
+    /// <summary>
+    /// Add aWF Status Level to buffer if a picture is present
+    /// </summary>
+    procedure ClearSetup()
     var
         StatusLevel: Record "aWF - Status Level";
     begin
