@@ -1,3 +1,5 @@
+//namespace Essent.OptimizeAgilesWorkflow.AgilesWorkflow;
+
 codeunit 92626 "PTE Clear Images (Agiles)"
 {
     procedure ProcessBuffer(HideDialog: Boolean)

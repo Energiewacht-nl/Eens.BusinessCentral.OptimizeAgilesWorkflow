@@ -1,3 +1,5 @@
+//namespace Essent.OptimizeAgilesWorkflow.AgilesWorkflow;
+
 pageextension 92627 "PTE To-Do List" extends "aWF - To-do List"
 {
     layout
@@ -8,7 +10,7 @@ pageextension 92627 "PTE To-Do List" extends "aWF - To-do List"
         }
         addafter("Status Picture")
         {
-            field(Status; StatusLevelBuffer.Name)
+            field("PTE Status"; StatusLevelBuffer.Name)
             {
                 ApplicationArea = All;
                 StyleExpr = StatusStyle;

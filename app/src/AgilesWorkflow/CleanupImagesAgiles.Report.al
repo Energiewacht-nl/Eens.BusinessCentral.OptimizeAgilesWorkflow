@@ -1,3 +1,5 @@
+//namespace Essent.OptimizeAgilesWorkflow.AgilesWorkflow;
+
 report 92627 "PTE Cleanup Images (Agiles)"
 {
     UsageCategory = ReportsAndAnalysis;

@@ -1,0 +1,221 @@
+{
+  "objectRanges": {
+    "codeunit": [
+      {
+        "from": 82560,
+        "to": 82659,
+        "description": "BC2ADLS"
+      },
+      {
+        "from": 92510,
+        "to": 92682,
+        "description": "General"
+      }
+    ],
+    "table": [
+      {
+        "from": 82560,
+        "to": 82579,
+        "description": "BC2ADLS"
+      },
+      {
+        "from": 91730,
+        "to": 91750,
+        "description": "General"
+      },
+      {
+        "from": 92600,
+        "to": 92751,
+        "description": "General"
+      }
+    ],
+    "report": [
+      {
+        "from": 82560,
+        "to": 82659,
+        "description": "BC2ADLS"
+      },
+      {
+        "from": 62668,
+        "to": 62668,
+        "description": "General"
+      },
+      {
+        "from": 92600,
+        "to": 92737,
+        "description": "General"
+      }
+    ],
+    "xmlport": [
+      {
+        "from": 82560,
+        "to": 82659,
+        "description": "BC2ADLS"
+      },
+      {
+        "from": 62668,
+        "to": 62668,
+        "description": "General"
+      },
+      {
+        "from": 92601,
+        "to": 92798,
+        "description": "General"
+      }
+    ],
+    "page": [
+      {
+        "from": 82560,
+        "to": 82659,
+        "description": "BC2ADLS"
+      },
+      {
+        "from": 62668,
+        "to": 62668,
+        "description": "General"
+      },
+      {
+        "from": 92540,
+        "to": 92858,
+        "description": "General"
+      }
+    ],
+    "query": [
+      {
+        "from": 82560,
+        "to": 82659,
+        "description": "BC2ADLS"
+      },
+      {
+        "from": 92688,
+        "to": 92787,
+        "description": "General"
+      }
+    ],
+    "enum": [
+      {
+        "from": 82560,
+        "to": 82659,
+        "description": "BC2ADLS"
+      },
+      {
+        "from": 60000,
+        "to": 82559,
+        "description": "General"
+      },
+      {
+        "from": 82660,
+        "to": 99999,
+        "description": "General"
+      }
+    ],
+    "enumextension": [
+      {
+        "from": 82560,
+        "to": 82659,
+        "description": "BC2ADLS"
+      },
+      {
+        "from": 60000,
+        "to": 82559,
+        "description": "General"
+      },
+      {
+        "from": 82660,
+        "to": 99999,
+        "description": "General"
+      }
+    ],
+    "permissionset": [
+      {
+        "from": 82560,
+        "to": 82659,
+        "description": "BC2ADLS"
+      },
+      {
+        "from": 60000,
+        "to": 82559,
+        "description": "General"
+      },
+      {
+        "from": 82660,
+        "to": 99999,
+        "description": "General"
+      }
+    ],
+    "permissionsetextension": [
+      {
+        "from": 82560,
+        "to": 82659,
+        "description": "BC2ADLS"
+      },
+      {
+        "from": 60000,
+        "to": 82559,
+        "description": "General"
+      },
+      {
+        "from": 82660,
+        "to": 99999,
+        "description": "General"
+      }
+    ],
+    "pageextension": [
+      {
+        "from": 60000,
+        "to": 79999,
+        "description": "BCX-Ray Pageextension"
+      },
+      {
+        "from": 82560,
+        "to": 82659,
+        "description": "BC2ADLS"
+      },
+      {
+        "from": 80000,
+        "to": 82559,
+        "description": "General"
+      },
+      {
+        "from": 82660,
+        "to": 99999,
+        "description": "General"
+      }
+    ],
+    "reportextension": [
+      {
+        "from": 82560,
+        "to": 82659,
+        "description": "BC2ADLS"
+      },
+      {
+        "from": 60000,
+        "to": 82559,
+        "description": "General"
+      },
+      {
+        "from": 82660,
+        "to": 99999,
+        "description": "General"
+      }
+    ],
+    "tableextension": [
+      {
+        "from": 82560,
+        "to": 82659,
+        "description": "BC2ADLS"
+      },
+      {
+        "from": 60000,
+        "to": 82559,
+        "description": "General"
+      },
+      {
+        "from": 82660,
+        "to": 99999,
+        "description": "General"
+      }
+    ]
+  },
+  "appPoolId": "95ca0e86e17d939dd4b09b23529dc621d35fe71c848adcf97af12e9f509360b0"
+}
