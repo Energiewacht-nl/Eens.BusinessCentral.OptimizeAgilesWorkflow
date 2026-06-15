@@ -16,9 +16,8 @@ codeunit 92626 "PTE Clear Images (Agiles)"
             Clear(ToDo."Status Picture");
             ToDo.Modify();
             i += 1;
-            if not HideDialog then begin
+            if not HideDialog then
                 Dlg.Update(1, i);
-            end;
         end;
         if not HideDialog then
             Dlg.Close();

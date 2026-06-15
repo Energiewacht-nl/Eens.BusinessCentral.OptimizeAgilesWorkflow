@@ -33,7 +33,7 @@ pageextension 92627 "PTE To-Do List" extends "aWF - To-do List"
         until StatusLevel.Next() = 0;
     end;
 
-    trigger OnafterGetRecord()
+    trigger OnAfterGetRecord()
     begin
         StatusLevelBuffer.Get(Rec."Status Level");
         case StatusLevelBuffer.Style of
@@ -45,7 +45,7 @@ pageextension 92627 "PTE To-Do List" extends "aWF - To-do List"
                 StatusStyle := 'Strong';
             StatusLevelBuffer.Style::StrongAccent:
                 StatusStyle := 'StrongAccent';
-            statuslevelbuffer.Style::Attention:
+            StatusLevelBuffer.Style::Attention:
                 StatusStyle := 'Attention';
             StatusLevelBuffer.Style::AttentionAccent:
                 StatusStyle := 'AttentionAccent';
@@ -60,14 +60,13 @@ pageextension 92627 "PTE To-Do List" extends "aWF - To-do List"
         end;
     end;
 
-    trigger OnafterGetCurrRecord()
+    trigger OnAfterGetCurrRecord()
     begin
         //StatusLevelBuffer.Get(Rec."Status Level");
         //StatusStyle := Format(StatusLevelBuffer.Style);
     end;
 
     var
-        test: Page "aWF - Status Level List";
         StatusLevelBuffer: Record "aWF - Status Level" temporary;
         StatusStyle: Text;
 }
