@@ -50,8 +50,8 @@ codeunit 92626 "PTE Clear Images (Agiles)"
     var
         StatusLevel: Record "aWF - Status Level";
     begin
+        StatusLevel.SetAutoCalcFields(Picture);
         repeat
-            StatusLevel.CalcFields(Picture);
             if StatusLevel.Picture.HasValue then begin
                 Clear(StatusLevel.Picture);
                 StatusLevel.Modify();
