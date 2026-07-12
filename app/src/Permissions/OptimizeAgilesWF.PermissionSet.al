@@ -1,4 +1,4 @@
-//namespace Essent.OptimizeAgilesWorkflow.AgilesWorkflow;
+//namespace Essent.OptimizeAgilesWorkflow.Permissions;
 
 permissionset 92626 OptimizeAgilesWF
 {
