@@ -2,8 +2,10 @@
   "id": "1c866e3d-3ed3-45b8-ab8c-1dbd0d095029",
   "name": "Optimize Agiles Workflow",
   "publisher": "Essent",
-  "version": "27.5.260708.0",
-  "logo": "",
+  "version": "27.5.260713.0",
+  "brief": "Essent Optimize Agiles Workflow",
+  "description": "Essent Optimize Agiles Workflow",
+  "logo": "assets/Essent.png",
   "platform": "27.0.0.0",
   "application": "27.0.0.0",
   "dependencies": [
